@@ -1,0 +1,19 @@
+{
+  "name": "golden-array-utils",
+  "version": "1.0.0",
+  "description": "Simple array utilities that do not mutate the source array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+    "utils",
+    "gold",
+    "immutable",
+    "react",
+    "redux"
+  ],
+  "author": "Sean McGarrity",
+  "license": "ISC"
+}
