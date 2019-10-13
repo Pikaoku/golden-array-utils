@@ -11,6 +11,7 @@ export default class Au {
 	public static move(a: array, from: int, to: int): array {
 		return Au.addAt(Au.remove(a, from), to, a[from])
 	}
+
 	public static remove(a: array, index: int): array {
 		return a.filter((value, i) => i !== index)
 	}
@@ -29,5 +30,22 @@ export default class Au {
 
 	public static addAt(a: array, index: int, value: any) {
 		return Au.addManyAt(a, index, [value])
+	}
+
+	public static byKeyEquals(
+		key: string,
+		value: any,
+		not: boolean = false
+	): GenericFilter {
+		return (item: { [key: string]: any }) =>
+			not ? item[key] !== value : item[key] === value
+	}
+
+	public static byKeyNotEquals(key: string, value: any): GenericFilter {
+		return Au.byKeyEquals(key, value, true)
+	}
+
+	public static byId(id: string | number) {
+		return Au.byKeyEquals('id', id)
 	}
 }
