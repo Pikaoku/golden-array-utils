@@ -15,5 +15,9 @@
     "redux"
   ],
   "author": "Sean McGarrity",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/typescript": "^2.0.0",
+    "typescript": "^3.6.4"
+  }
 }
