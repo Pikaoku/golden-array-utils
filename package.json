@@ -4,9 +4,9 @@
   "description": "Simple array utilities that do not mutate the source array",
   "author": "Sean McGarrity",
   "license": "ISC",
-  "main": "index.js",
+  "main": "Au.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
