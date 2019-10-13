@@ -4,12 +4,18 @@
   "description": "Simple array utilities that do not mutate the source array",
   "author": "Sean McGarrity",
   "license": "ISC",
-  "main": "Au.ts",
+  "main": "lib/Au.js",
+  "types": "lib/Au.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
