@@ -32,7 +32,7 @@
     "redux"
   ],
   "files": [
-    "lib /**/*"
+    "lib/**/*"
   ],
   "devDependencies": {
     "@types/jest": "^24.0.18",
