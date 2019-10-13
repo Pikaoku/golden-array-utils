@@ -8,4 +8,7 @@ export default class Au {
 		return [...a]
 	}
 
+	public static move(a: array, from: int, to: int): array {
+		return Au.addAt(Au.remove(a, from), to, a[from])
+	}
 }

@@ -9,6 +9,11 @@ test('Clone', () => {
 	expect(Au.clone(ar)).not.toBe(ar)
 })
 
-test('My Greeter', () => {
-	expect(Greeter('Carl')).toBe('Hello Carl')
+test('Move', () => {
+	const ar: any[] = ['a', 'b', 'c']
+	expect(Au.move(ar, 0, 1)).toEqual(['b', 'a', 'c'])
+	expect(Au.move(ar, 0, 2)).toEqual(['b', 'c', 'a'])
+	expect(Au.move(ar, 0, 400)).toEqual(['b', 'c', 'a'])
+	expect(ar).toEqual(['a', 'b', 'c'])
+})
 })
