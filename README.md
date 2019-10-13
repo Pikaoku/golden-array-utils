@@ -1,16 +1,18 @@
 # Golden Array Utils
 
-I found myself repeating he same logic repeatedly when working with immutable or stateful data in React. To save some time I've compiled useful array functionality into an importable package, with tests!
+> Immutable Array Utility Functions
 
-The purpose of this package is that it _never_ modifies the original array.
+I found myself repeating logic repeatedly when working with immutable or stateful data. To save some time I have compiled some useful array functionality into an importable package... with tests!
+
+The purpose of this package is that it will _never_ modify the original array.
 
 ## Installation
 
-Just run `npm install golden-array-utils` and you've good to go!
+Just run `npm install golden-array-utils` and you're good to go!
 
 ## Usage
 
-To use the array utils in your project simply import the Array Utils (Au) object
+To use the array utils in your project simply import the Array Utils (`Au`) object
 
 ```JS
 import Au from 'golden-array-utils'
