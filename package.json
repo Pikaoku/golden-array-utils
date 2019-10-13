@@ -1,6 +1,6 @@
 {
   "name": "golden-array-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple array utilities that do not mutate the source array",
   "author": "Sean McGarrity",
   "license": "ISC",
