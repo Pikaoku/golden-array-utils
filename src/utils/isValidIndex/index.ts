@@ -1,4 +1,8 @@
-import { integer } from '../../types'
 import isInteger from '../isInteger'
 
-export default (index: integer) => isInteger(index) && index >= 0
+export default (index: number) => {
+	if (isInteger(index) && index >= 0) {
+		return true
+	}
+	throw new TypeError()
+}

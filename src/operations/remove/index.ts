@@ -1,4 +1,2 @@
-import { integer } from '../../types'
-
-export default (array: any[], index: integer) =>
+export default (array: any[], index: number) =>
 	array.filter((_, i) => i !== index)
