@@ -1,3 +1,4 @@
 import { array } from '../../types'
+import hardCopy from '../../utils/hardCopy'
 
-export default (a: array): array => [...JSON.parse(JSON.stringify(a))]
+export default (a: array): array => [...hardCopy(a)]
