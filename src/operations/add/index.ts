@@ -1,4 +1,4 @@
 import { array } from '../../types'
-import deepClone from '../deepClone'
+import addMany from '../addMany'
 
-export default (array: array, value: any) => [...array, value]
+export default (array: array, value: any) => addMany(array, [value])
