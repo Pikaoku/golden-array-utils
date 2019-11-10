@@ -1,5 +1,4 @@
 import add from '.'
-import { array } from '../../types'
 
 test('empty array', () => {
 	expect(add([], 1)).toEqual([1])
@@ -24,7 +23,7 @@ test('new element is added to end', () => {
 })
 
 test('source array immutability', () => {
-	const source: array = [1, 2, 3]
+	const source: any[] = [1, 2, 3]
 	const clone = add(source, 4)
 
 	expect(clone[0]).toEqual(source[0])

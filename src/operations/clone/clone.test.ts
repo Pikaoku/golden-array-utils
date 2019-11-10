@@ -1,20 +1,19 @@
 import clone from '.'
-import { array } from '../../types'
 
 test('empty value', () => {
-	const a: array = []
+	const a: any[] = []
 	expect(clone(a)).toEqual([])
 	expect(clone(a)).not.toBe(a)
 })
 
 test('simple array', () => {
-	const a: array = [1, 2, 3]
+	const a: any[] = [1, 2, 3]
 	expect(clone(a)).toEqual([1, 2, 3])
 	expect(clone(a)).not.toBe(a)
 })
 
 test('immutability', () => {
-	const source: array = [1, 2, 3]
+	const source: any[] = [1, 2, 3]
 	const cloned = clone(source)
 	expect(cloned).toEqual(source)
 	expect(cloned).not.toBe(source)

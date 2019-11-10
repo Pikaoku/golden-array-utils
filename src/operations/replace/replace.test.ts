@@ -1,3 +1,1 @@
-test('Placeholder', () => {
-	expect(true).toBeTruthy()
-})
+import replace from '.'

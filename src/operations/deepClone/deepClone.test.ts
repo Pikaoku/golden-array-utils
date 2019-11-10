@@ -1,8 +1,7 @@
 import deepClone from '.'
-import { array } from '../../types'
 
 test('empty', () => {
-	const original: array = []
+	const original: any[] = []
 	expect(deepClone(original)).not.toBe(original)
 	expect(deepClone(original)).toEqual([])
 })

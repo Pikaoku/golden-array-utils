@@ -1,9 +1,10 @@
-import { array, integer } from '../../types'
+import { integer } from '../../types'
 import isInteger from '../../utils/isInteger'
+import addManyAt from '../addManyAt'
 
-export default (array: array, index: integer, value: any) => {
+export default (array: any[], index: integer, value: any) => {
 	if (!isInteger(index) || index < 0) {
 		throw new TypeError()
 	}
-	return [...array]
+	return addManyAt(array, index, [value])
 }
