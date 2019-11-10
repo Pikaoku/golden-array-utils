@@ -15,7 +15,3 @@ test('index must be an integer', () => {
 test('index must be a positive integer', () => {
 	expect(() => addAt([1], -1, 2)).toThrowError(TypeError)
 })
-
-test('new value inserted at index', () => {
-	expect(addAt([1, 2, 3], 1, 'boop')[1]).toEqual('boop')
-})
