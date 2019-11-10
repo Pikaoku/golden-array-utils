@@ -1,1 +1,1 @@
-export default (a: any[]): any[] => [...JSON.parse(JSON.stringify(a))]
+export default (a: any[]): any[] => [...a]
