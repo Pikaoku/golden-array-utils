@@ -1,3 +1,5 @@
 import addMany from '../addMany'
 
-export default (array: any[], value: any) => addMany(array, [value])
+export default function add(array: any[], value: any) {
+	return addMany(array, [value])
+}
