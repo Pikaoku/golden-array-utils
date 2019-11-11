@@ -24,6 +24,13 @@ And use one of it's functions
 this.setState({ todos: Au.remove(this.state.todos, clickedIndex) })
 ```
 
+or to improve tree shaking import a specific part of the package
+
+```TS
+import operations from 'golden-array-utils/operations'
+import addManyAt from 'golden-array-utils/operations/addManyAt'
+```
+
 ### Functions
 
 Every function returns a _new array_ with the function applied. The original array will never be altered.

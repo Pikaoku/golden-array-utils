@@ -4,9 +4,9 @@
   "description": "Simple array utilities that do not mutate the source array",
   "author": "Sean McGarrity",
   "license": "ISC",
-  "main": "lib",
-  "types": "lib",
-  "typings": "lib",
+  "main": "lib/Au",
+  "types": "lib/Au",
+  "typings": "lib/Au",
   "scripts": {
     "test": "jest --config jest.config.js",
     "test-watch": "jest --config jest.config.js --watchAll",
