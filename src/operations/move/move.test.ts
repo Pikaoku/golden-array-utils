@@ -15,16 +15,7 @@ test('simple object moved', () => {
 })
 
 test('immutability', () => {
-	const d = {
-		e: 3,
-		f: 4,
-	}
-	const a = {
-		b: 1,
-		c: 2,
-		d,
-	}
-	expect(move([a, 1], 0, 1)).toEqual([1, a])
-	expect(move([a, 1], 0, 1)[1].d).toEqual(d)
-	expect(move([a, 1], 0, 1)[1].d).not.toBe(d)
+	const a = [1, 2, 3]
+	expect(move(a, 0, 1)).toEqual([2, 1, 3])
+	expect(a).toEqual([1, 2, 3])
 })
