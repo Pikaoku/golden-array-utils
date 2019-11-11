@@ -5,7 +5,16 @@
     "lib": ["es2015"],
     "declaration": true,
     "outDir": "./lib",
-    "strict": true
+    "strict": true,
+    "baseUrl": ".",
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "paths": {
+      "golden-array-utils": ["./src/index"],
+      "golden-array-utils/operations": ["./src/operations/index"],
+      "golden-array-utils/filters": ["./src/filters/index"],
+      "golden-array-utils/utils": ["./src/utils/index"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*", "**.*.test.*"]

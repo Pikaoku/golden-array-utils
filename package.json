@@ -1,56 +1,50 @@
 {
-  "name": "golden-array-utils",
-  "version": "2.0.3",
-  "description": "Simple array utilities that do not mutate the source array",
-  "author": "Sean McGarrity",
-  "license": "ISC",
-  "main": "lib/Au",
-  "types": "lib/Au",
-  "typings": "lib/Au",
-  "scripts": {
-    "test": "jest --config jest.config.js",
-    "test-watch": "jest --config jest.config.js --watchAll",
-    "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint -p tsconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Pikaoku/golden-array-utils.git"
-  },
-  "keywords": [
-    "immutable",
-    "array",
-    "utils",
-    "gold",
-    "react",
-    "redux"
-  ],
-  "files": [
-    "lib/**/*"
-  ],
-  "devDependencies": {
-    "@types/jest": "^24.0.18",
-    "@types/prettier": "^1.18.3",
-    "@types/typescript": "^2.0.0",
-    "jest": "^24.9.0",
-    "prettier": "^1.18.2",
-    "ts-jest": "^24.1.0",
-    "tslint": "^5.20.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.6.4"
-  },
-  "prettier": {
-    "jsxSingleQuote": true,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "tabWidth": 4,
-    "useTabs": true
-  }
+	"name": "golden-array-utils",
+	"version": "2.0.3",
+	"description": "Simple array utilities that do not mutate the source array",
+	"author": "Sean McGarrity",
+	"license": "ISC",
+	"main": "lib/Au",
+	"types": "lib/Au",
+	"typings": "lib/Au",
+	"scripts": {
+		"test": "jest --config jest.config.js",
+		"test-watch": "jest --config jest.config.js --watchAll",
+		"build": "tsc",
+		"format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+		"lint": "tslint -p tsconfig.json",
+		"prepare": "npm run build",
+		"prepublishOnly": "npm test && npm run lint",
+		"preversion": "npm run lint",
+		"version": "npm run format && git add -A src",
+		"postversion": "git push && git push --tags"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Pikaoku/golden-array-utils.git"
+	},
+	"keywords": [
+		"immutable",
+		"array",
+		"utils",
+		"gold",
+		"react",
+		"redux"
+	],
+	"files": [
+		"operations",
+		"filters",
+		"utils"
+	],
+	"devDependencies": {
+		"@types/jest": "^24.0.18",
+		"@types/prettier": "^1.18.3",
+		"@types/typescript": "^2.0.0",
+		"jest": "^24.9.0",
+		"prettier": "^1.18.2",
+		"ts-jest": "^24.1.0",
+		"tslint": "^5.20.0",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^3.6.4"
+	}
 }
